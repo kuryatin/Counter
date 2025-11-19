@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     }
     @IBAction func pressButton(_ sender: Any) {
         
-       // print("жмяк") 
+        print("жмяк") 
         count += 1
         Counter.text = "Значение счётчика: \(count)"
     } 
