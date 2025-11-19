@@ -7,8 +7,8 @@
 
 import UIKit
 
-//final
-class ViewController: UIViewController {
+
+final class ViewController: UIViewController {
     
     @IBOutlet weak var Counter: UILabel!
     var count: Int = 0
@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     }
     @IBAction func pressButton(_ sender: Any) {
         
-        print("жмяк") 
+        print("жмяк")
         count += 1
         Counter.text = "Значение счётчика: \(count)"
     } 
