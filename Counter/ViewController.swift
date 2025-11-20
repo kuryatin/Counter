@@ -1,24 +1,17 @@
-//
-//  ViewController.swift
-//  Counter
-//
-//  Created by Антон Курятин on 18.11.2025.
-//
-
 import UIKit
 
 final class ViewController: UIViewController {
     
-    @IBOutlet weak var meaningOfCounter: UILabel!
-    private var count: Int = 0
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    // MARK: - Outlets
+    @IBOutlet private weak var counterLabel: UILabel!
     
-    }
-    @IBAction func pressButton(_ sender: Any) {
-        
+    // MARK: - Properties
+    private var count: Int = 0
+
+    // MARK: - Actions
+    @IBAction private func incrementCounterButtonTapped(_ sender: UIButton) {
         print("жмяк")
         count += 1
-        meaningOfCounter.text = "Значение счётчика: \(count)"
+        counterLabel.text = "Значение счётчика: \(count)"
     }
 }

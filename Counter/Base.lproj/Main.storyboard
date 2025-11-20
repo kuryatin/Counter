@@ -28,7 +28,7 @@
                                     <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="pressButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HGg-Gx-znk"/>
+                                    <action selector="incrementCounterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DYf-ld-eRu"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Значение счётчика: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCn-h9-0Gf">
@@ -57,7 +57,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="meaningOfCounter" destination="DCn-h9-0Gf" id="xdx-iE-lLY"/>
+                        <outlet property="counterLabel" destination="DCn-h9-0Gf" id="zA7-t0-8DK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
